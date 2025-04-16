@@ -1,0 +1,28 @@
+{
+    "name": "goodfood-webmaster/mod_base",
+    "description": "GFH Base Module",
+    "keywords": [ "dwg", "module" ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "GFH Webmaster",
+            "email": "goodfood.webmaster@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "mailgun/mailgun-php": "^2.8",
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message": "^1.7",
+		"oyejorge/less.php": "1.7.0.*",
+		"defuse/php-encryption":"2.3.*"
+    },
+    "autoload": {
+	    "files": [
+		    "_basejump.php",
+			"_creds.class.php",
+		    "_mailout.php"
+	    ]
+    },
+    "minimum-stability": "stable"
+}
