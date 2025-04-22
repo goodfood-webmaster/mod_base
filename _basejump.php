@@ -6,7 +6,8 @@
 		var $client = NULL;
 		var $build = NULL;
 		var $adminBuild = NULL;
-		var $path = "/_inc/vendor/dwgreenco/";
+		var $path = "/wp-content/themes/bristolfarms_2025/_inc/vendor/goodfood-webmaster/";
+		var $vendor = "goodfood-webmaster";
 		
 		public function __construct($client=NULL,$build=NULL,$buildOverrides=array(),$admin=false){
 			
@@ -61,7 +62,7 @@
 			
 			if(!is_null($this->build)){	
 				include_once $_SERVER["DOCUMENT_ROOT"].$this->path."mod_base/".$this->build."/_client.class.php";
-				define("_BASE_PATH","vendor/dwgreenco/mod_base/".$this->build);
+				define("_BASE_PATH","vendor/{$this->vendor}/mod_base/".$this->build);
 			}
 			if($this->build >= 1003){
 				
@@ -120,11 +121,11 @@
 			}
 			
 			if(!is_null($this->build))
-				define("_BASE_PATH","vendor/dwgreenco/mod_base/".$this->build);
+				define("_BASE_PATH","vendor/{$this->vendor}/mod_base/".$this->build);
 			
 			if(!is_null($this->adminBuild)){
 				include_once $_SERVER["DOCUMENT_ROOT"].$this->path."mod_admin/".$this->adminBuild."/_inc/_admin.class.php";
-				define("_ADMIN_PATH","vendor/dwgreenco/mod_admin/".$this->adminBuild);
+				define("_ADMIN_PATH","vendor/{$this->vendor}/mod_admin/".$this->adminBuild);
 			
 				if(isset($_SESSION['adminObj'])){
 					$_SESSION['adminObj'] = $this->fix_obj($_SESSION['adminObj']);
@@ -223,7 +224,8 @@
 		var $client = NULL;
 		var $build = NULL;
 		var $adminBuild = NULL;
-		var $path = "/_inc/vendor/dwgreenco/";
+		var $path = "/wp-content/themes/bristolfarms_2025/_inc/vendor/goodfood-webmaster/";
+		var $vendor = "goodfood-webmaster";
 		
 		public function __construct($client=NULL,$build=NULL,$buildOverrides=array(),$admin=false){
 			
@@ -278,7 +280,7 @@
 			
 			if(!is_null($this->build)){	
 				include_once $_SERVER["DOCUMENT_ROOT"].$this->path."mod_base/".$this->build."/_client.class.php";
-				define("_BASE_PATH","vendor/dwgreenco/mod_base/".$this->build);
+				define("_BASE_PATH","vendor/{$this->vendor}/mod_base/".$this->build);
 			}
 			if($this->build >= 1003){
 				
@@ -337,11 +339,11 @@
 			}
 			
 			if(!is_null($this->build))
-				define("_BASE_PATH","vendor/dwgreenco/mod_base/".$this->build);
+				define("_BASE_PATH","vendor/{$this->vendor}/mod_base/".$this->build);
 			
 			if(!is_null($this->adminBuild)){
 				include_once $_SERVER["DOCUMENT_ROOT"].$this->path."mod_admin/".$this->adminBuild."/_inc/_admin.class.php";
-				define("_ADMIN_PATH","vendor/dwgreenco/mod_admin/".$this->adminBuild);
+				define("_ADMIN_PATH","vendor/{$this->vendor}/mod_admin/".$this->adminBuild);
 			
 				if(isset($_SESSION['adminObj'])){
 					$_SESSION['adminObj'] = $this->fix_obj($_SESSION['adminObj']);
