@@ -10,7 +10,7 @@
 		var $page = array();
 		var $loadClientInfo = false;
 
-		public function Page($uri=NULL) {//constructor
+		public function __construct($uri=NULL) {
 			
 			parent::__construct();
 		

@@ -9,7 +9,7 @@
 		var $clientInfo = array();
 		var $clientObj;
 		
-		protected function Base() {//constructor
+		protected function __construct() {
 				
 			$this->dbconnect();
 			
@@ -527,7 +527,7 @@ Web Server at <?=$_SERVER['HTTP_HOST'];?>
 		public $profiles = array();
 		public $initialized = false;
 			
-		private function construct__() {
+		private function __construct() {
 			//NO CONSTRUCTING ALLOWED
 		}
 		

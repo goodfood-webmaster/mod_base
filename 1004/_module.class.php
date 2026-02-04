@@ -7,7 +7,7 @@
 		var $images = array();
 		var $prefs = array('retina_optimization'=>false);
 		
-		protected function Module() {//constructor
+		protected function __construct() {
 			
 			parent::__construct();
 		

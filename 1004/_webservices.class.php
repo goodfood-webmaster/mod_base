@@ -12,7 +12,7 @@
 		var $format = "xml";
 		var $CData = true;
 		
-		public function Webservices($key) {//constructor
+		public function __construct($key) {
 			
 			parent::__construct();
 			
