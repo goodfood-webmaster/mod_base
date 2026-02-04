@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "mailgun/mailgun-php": "^2.8",
+        "mailgun/mailgun-php": "4.*",
         "php-http/guzzle6-adapter": "^1.1",
         "php-http/message": "^1.7",
 		"oyejorge/less.php": "1.7.0.*",
