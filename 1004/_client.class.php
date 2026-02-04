@@ -70,7 +70,8 @@
 		
 		public function define_module_paths($buildOverrides=array()){
 			//define constants for module files
-			if(is_array($this->modules ?? [])){
+			$this->modules = $this->modules ?? [];
+			if(is_array($this->modules)){
 				foreach($this->modules as $k=>$m){
 					if(isset($buildOverrides[$k]) && !$buildOverrides[$k]){
 						//skip module
