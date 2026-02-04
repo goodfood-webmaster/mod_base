@@ -224,10 +224,12 @@
 		var $client = NULL;
 		var $build = NULL;
 		var $adminBuild = NULL;
-		var $path = "/wp-content/themes/bristolfarms_2025/_inc/vendor/goodfood-webmaster/";
+		var $path = "/_inc/vendor/";
 		var $vendor = "goodfood-webmaster";
 		
 		public function __construct($client=NULL,$build=NULL,$buildOverrides=array(),$admin=false){
+
+			$this->path .= $this->vendor."/";
 			
 			if(!defined("_DB_HOST") || !defined("_DB_USER") || !defined("_DB_PASS")){
 				echo "no database vars";
