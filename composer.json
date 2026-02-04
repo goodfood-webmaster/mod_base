@@ -14,7 +14,7 @@
         "mailgun/mailgun-php": "4.*",
         "php-http/guzzle7-adapter": "1.*",
         "php-http/message": "1.*",
-		"oyejorge/less.php": "1.7.0.*",
+		"wikimedia/less.php": "^5.5",
 		"defuse/php-encryption":"2.3.*"
     },
     "autoload": {
