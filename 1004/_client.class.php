@@ -69,8 +69,8 @@
 		}
 		
 		public function define_module_paths($buildOverrides=array()){
-			//devine constants for module files
-			if(is_array($this->modules)){
+			//define constants for module files
+			if(is_array($this->modules ?? [])){
 				foreach($this->modules as $k=>$m){
 					if(isset($buildOverrides[$k]) && !$buildOverrides[$k]){
 						//skip module
@@ -137,10 +137,10 @@
 				$locationListStart = '';
 				$locationList = array();
 				$locationListEnd = '';
-				$table = $this->locationsTable['table'];
-				$live = $this->locationsTable['live'];
-				$liveValue = $this->locationsTable['liveValue'];
-				$where = $this->locationsTable['where'];
+				$table = $this->locationsTable['table'] ?? '';
+				$live = $this->locationsTable['live'] ?? '';
+				$liveValue = $this->locationsTable['liveValue'] ?? '';
+				$where = $this->locationsTable['where'] ?? '';
 				
 				if(is_array($liveValue))
 					$liveValue = implode("','",$liveValue);
